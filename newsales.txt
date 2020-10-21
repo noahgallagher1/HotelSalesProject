@@ -1,0 +1,4 @@
+John Public;Dinner;23.23;06/09/1999
+Jane Public;Conference;23.56;04/03/1999
+Abby Lawrence;Lodging;222.22;22/33/1234
+John Wick;Dinner;12.33;23/24/1987
