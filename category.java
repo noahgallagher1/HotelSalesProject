@@ -86,13 +86,6 @@ import java.util.Scanner;
      */
     public static void main(String[] args){
 
-        //creating ArrayLists for each category
-        ArrayList<Sale> Dinner = new ArrayList<Sale>();
-        ArrayList<Sale> Conference = new ArrayList<Sale>();
-        ArrayList<Sale> Lodging = new ArrayList<Sale>();
-
-        //setting the filename to the argument in the command line
-        String filename = args[0];
 
         //scanning the input file for instances of each category
         try (PrintWriter din = new PrintWriter("Dinner.txt");
@@ -100,6 +93,14 @@ import java.util.Scanner;
              PrintWriter lod = new PrintWriter("Lodging.txt")
              ) {
 
+            //creating ArrayLists for each category
+            ArrayList<Sale> Dinner = new ArrayList<Sale>();
+            ArrayList<Sale> Conference = new ArrayList<Sale>();
+            ArrayList<Sale> Lodging = new ArrayList<Sale>();
+
+            //setting the filename to the argument in the command line
+            String filename = args[0];
+         
             ArrayList<Sale> sales = new ArrayList<Sale>(readSalesFile(filename));
             //for each loop to iterate through each Sale in file
             for (Sale s : sales){
