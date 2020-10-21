@@ -66,6 +66,7 @@ public class category extends hotel {
                 //executes if the sale is none of the above, "unknown service type"
                 else {
                     System.out.println("This is not a valid service type.");
+                    throws new UnknownTransactionException("Unknown Transaction");
                 }
             }
 
