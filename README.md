@@ -1,4 +1,5 @@
 A hotel salesperson enters sales in a text file. Each line contains the following, separated by semicolons:
+
         The name of the client,
         The service sold (such as Dinner, Conference, Lodging, and so on),
         The amount of the sale, and the date of that event.
@@ -6,6 +7,7 @@ A hotel salesperson enters sales in a text file. Each line contains the followin
 Prompt the user for data to write the file
 
 This program reads the text file as described above, and writes a separate file for each service category, containing the entries for that category. 
+
     The output files are named: Dinner.txt, Conference.txt, and so on.
     The name of the output file from Part One is read as a command line argument.
 
